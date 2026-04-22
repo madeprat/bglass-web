@@ -203,15 +203,68 @@ img {
   margin-top: 1.8rem;
 }
 
-.contact-note {
-  margin: 1rem 0 0;
-  color: var(--muted);
-}
-
 .email-display {
   color: var(--text);
   font-weight: 700;
   word-break: break-word;
+}
+
+.cta-panel-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 360px);
+  align-items: center;
+}
+
+.cta-copy {
+  min-width: 0;
+}
+
+.contact-card {
+  padding: 1.35rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-label {
+  display: inline-flex;
+  margin-bottom: 0.65rem;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #d9e7fb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-email {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.contact-helper {
+  margin: 0.65rem 0 1.15rem;
+  color: var(--muted);
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+
+.contact-link-inline {
+  color: #b8fff4;
+  font-weight: 700;
+}
+
+.contact-link-inline:hover,
+.contact-link-inline:focus-visible {
+  color: #d6fffa;
 }
 
 .btn {
@@ -560,6 +613,7 @@ img {
   .hero-grid,
   .split-grid,
   .cta-panel,
+  .cta-panel-contact,
   .footer-wrap,
   .trust-row,
   .steps-grid,
@@ -637,7 +691,8 @@ img {
   .statement-card,
   .checklist-card,
   .cta-panel,
-  .faq-list details {
+  .faq-list details,
+  .contact-card {
     padding: 1.1rem;
   }
 }
